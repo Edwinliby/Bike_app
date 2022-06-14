@@ -7,7 +7,7 @@ Mainly focused on making the UI of the application using android studio and usin
 
 ## UI Screenshots
 
-![App Screenshot](https://github.com/Edwinliby/Diary_APP/blob/main/diary_app/lib/Screenshots/4.jpg)
+![App Screenshot]()
 
 
 
