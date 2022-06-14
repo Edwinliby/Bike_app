@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E27116">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="10dp"
+            android:src="@drawable/caferacer"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_below="@id/top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="36sp"
+            android:gravity="start"
+            android:text="Continental  GT650"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bebasneueregular"
+            android:paddingLeft="18dp"/>
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_below="@id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="32sp"
+            android:gravity="start"
+            android:text="BS IV"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bebasneueregular"
+            android:paddingLeft="18dp"
+            android:paddingBottom="15dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/royal"
+            android:layout_below="@id/name2"
+            android:scaleType="fitStart"
+            android:paddingStart="20dp"
+            android:paddingBottom="10dp"/>
+
+        <HorizontalScrollView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@id/name2"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="420dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/frontview"/>
+                <ImageView
+                    android:layout_width="420dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/gt650"/>
+
+                <ImageView
+                    android:layout_width="420dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/rearview"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/features"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@id/details">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:paddingLeft="20dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cc"/>
+                <ImageView
+                    android:paddingLeft="20dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/speed"/>
+                <ImageView
+                    android:paddingLeft="20dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fuel"/>
+                <ImageView
+                    android:paddingLeft="20dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/kerb"/>
+                <ImageView
+                    android:paddingLeft="20dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/milage"/>
+                <ImageView
+                    android:paddingLeft="20dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/seat"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_below="@id/image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="The new GT650 echoes its predecessors style, but it's a whole new motorcycle. Its ergonomics offers an easy reach to the clip-on bars, for an optimum mix of steering feel and comfort."
+            android:gravity="start"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingRight="18dp"
+            android:paddingLeft="18dp"/>
+
+        <TextView
+            android:id="@+id/Book"
+            android:layout_below="@id/features"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/box"
+            android:text="Book Ride"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_below="@id/Book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Continental GT 650"
+            android:gravity="start"
+            android:textSize="29sp"
+            android:textColor="@color/black"
+            android:paddingTop="50dp"
+            android:paddingLeft="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_below="@id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Royal Enfield Continental GT 650 is a cafe racer bike available at a starting price of Rs. 3,04,978 in India. It is available in 3 variants and 5 colours with top variant price starting from Rs. 3,30,798. The Royal Enfield Continental GT 650 is powered by 648cc BS6 engine which develops a power of 47 bhp and a torque of 52 Nm. With both front and rear disc brakes, Royal Enfield Continental GT 650 comes up with anti-locking braking system. This Continental GT 650 bike weighs 198 kg and has a fuel tank capacity of 12.5 liters."
+            android:gravity="start"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+</ScrollView>
